@@ -204,7 +204,7 @@ function End(Win) {
     
     $("#container").empty();
     $("body").fadeOut("fast")
-    $.post("http://ls_circleminigame/exit", JSON.stringify({Win: Win}));
+    $.post(`https://${GetParentResourceName()}/exit`, JSON.stringify({Win: Win}));
 }
 
 function Spot() {
